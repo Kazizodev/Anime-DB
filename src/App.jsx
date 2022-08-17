@@ -1,10 +1,16 @@
-import Header from './Components/Header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Landing from './Components/Landing'
 
 const App = () => {
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Landing />} />
+          <Route path='*' element={<Landing />} />
+        </Routes>
+      </Router>
+    </>
   )
 }
 
