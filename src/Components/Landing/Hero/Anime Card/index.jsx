@@ -6,7 +6,7 @@ const index = ({ list }) => {
                 return (
                     <div className='lg:w-[220px] md:w-[180px] w-full px-2 mb-6 cursor-pointer' key={anime + i}>
                         <div className='relative'>
-                            <img src={anime.images.webp.large_image_url} draggable={false} className='h-[325px] lg:w-[220px] md:w-[180px] w-full object-cover rounded-lg mb-2' alt="" />
+                            <img loading="lazy" src={anime.images.webp.large_image_url} draggable={false} className='h-[325px] lg:w-[220px] md:w-[180px] w-full object-cover rounded-lg mb-2' alt="" />
                             <div className='absolute top-[10px] text-sm right-[10px] text-white bg-red-600 px-3 py-1.5 leading-none rounded-[4px]'>
                                 {anime.score}
                             </div>
