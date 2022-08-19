@@ -18,10 +18,10 @@ const index = () => {
 
   return (
     <div className='dark:bg-[#0A0C2B] transition duration-[0.7s]'>
-      <div className="container mx-auto flex flex-wrap py-8 px-2">
-        <div className='sm:w-[75%] w-[100%]'>
+      <div className="container mx-auto flex justify-between flex-col md:flex-row py-8 px-2">
+        <div className='md:w-[67%] w-[100%]'>
           <div className='mb-5'>
-            <h1 className='uppercase text-3xl font-[600] border-l-4 border-red-600 pl-4 dark:text-white transition duration-[0.7s]'>Top rated</h1>
+            <h1 className='uppercase text-2xl font-[600] border-l-4 tracking-tight border-red-600 pl-4 dark:text-white transition duration-[0.7s]'>Trending now</h1>
           </div>
           {topRated.length > 0 ?
             (
@@ -32,9 +32,9 @@ const index = () => {
             : ""}
         </div>
 
-        <div className='sm:w-[25%] w-[100%] px-2'>
+        <div className='md:w-[30%] w-[100%] md:px-2'>
         <div className='mb-5'>
-            <h1 className='uppercase text-3xl font-[600] border-l-4 border-red-600 pl-4 dark:text-white transition duration-[0.7s]'>Top characters</h1>
+            <h1 className='uppercase text-xl font-[600] border-l-4 tracking-tight border-red-600 pl-4 dark:text-white transition duration-[0.7s]'>Top characters</h1>
           </div>
           {topCharacters.length > 0 ?
             (

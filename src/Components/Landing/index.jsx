@@ -7,13 +7,12 @@ const index = () => {
     const [darkMode, setDarkMode] = useState(false);
 
     return (
-        <div className={darkMode ? "dark transition-all duration-[0.7s]" : ""}>
+        <div className={darkMode ? "dark transition-all duration-[0.7s] relative" : ""}>
             {/* Dark mode */}
-            <div className="dark:bg-[#070621] transition-all duration-[0.7s]">
-                <div className="flex justify-end container mx-auto px-2 pt-3">
-                    <input type="checkbox" value={darkMode} onChange={() => setDarkMode(!darkMode)} id="theme-toggle" />
-                    <label htmlFor="theme-toggle"></label>
-                </div>
+            <div className="fixed flex justify-center items-center dark:bg-gray-100 dark:shadow-inner bg-black transition-all duration-[0.7s] rounded-full 
+                            md:w-[80px] md:h-[80px] w-[60px] h-[60px] sm:right-[2rem] right-[1rem] sm:bottom-[2rem] bottom-[1rem] z-[99] shadow-xl">
+                <input type="checkbox" value={darkMode} className={"hidden"} onChange={() => setDarkMode(!darkMode)} id="theme-toggle" />
+                <label className="md:h-[40px] md:w-[40px] h-[30px] w-[30px]" htmlFor="theme-toggle"></label>
             </div>
             {/* Content */}
             <Header />
