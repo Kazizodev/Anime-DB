@@ -1,4 +1,3 @@
-
 const index = ({ list }) => {
     return (
         <div className='flex flex-col justify-between sm:flex-row flex-wrap'>
@@ -27,7 +26,7 @@ const index = ({ list }) => {
                                 );
                             })}
                         </div>
-                        <h1 className='mt-1 text-lg font-[500] dark:text-white cursor-pointer transition duration-[0.7s]'>{anime.title_english}</h1>
+                        <h1 className='mt-1 text-md font-[500] dark:text-white cursor-pointer transition duration-[0.7s]'>{anime.title_english}</h1>
                     </div>
                 );
             })}
